@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.1.6.RELEASE</version>
+		<relativePath /> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.william.zhou.org</groupId>
+	<artifactId>ecommerce-microservices</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>ecommerce-microservices</name>
+	<description>Demo project for Spring Boot</description>
+	<packaging>pom</packaging>
+
+	<modules>
+		
+		
+		
+		<module>../../Spring Workspace/catalog-service</module>
+		<module>../../Spring Workspace/recommendation-service</module>
+		<module>../../Spring Workspace/account-service</module>
+		<module>../../Spring Workspace/config-server</module>
+		<module>../../Spring Workspace/orders-service</module>
+		<module>../../Spring Workspace/eureka-service-discovery</module>
+		<module>../../Spring Workspace/products-service</module>
+		<module>../../Spring Workspace/reviews-service</module>
+		<module>../../Spring Workspace/hystrix-dashboard</module>
+	</modules>
+
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
